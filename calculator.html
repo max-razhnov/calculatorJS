@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="root">
+      <h1 class="title">Calculator</h1>
+      <input id="display" type="text" placeholder="0" />
+      <div class="container">
+        <div>
+          <button id="clearAll" class="buttons">AC</button>
+          <button id="dltOne" class="buttons" onclick="backspace()">
+            <
+          </button>
+          <button id="procent" class="buttons" onclick="insertElement('%')">
+            %
+          </button>
+          <button id="divide" class="buttons" onclick="insertElement('/')">
+            /
+          </button>
+        </div>
+        <div>
+          <button class="numbers buttons" onclick="insertElement(7)">7</button>
+          <button class="numbers buttons" onclick="insertElement(8)">8</button>
+          <button class="numbers buttons" onclick="insertElement(9)">9</button>
+          <button id="multiply" class="buttons" onclick="insertElement('*')">
+            *
+          </button>
+        </div>
+        <div>
+          <button class="numbers buttons" onclick="insertElement(4)">4</button>
+          <button class="numbers buttons" onclick="insertElement(5)">5</button>
+          <button class="numbers buttons" onclick="insertElement(6)">6</button>
+          <button id="minus" class="buttons" onclick="insertElement('-')">
+            -
+          </button>
+        </div>
+        <div>
+          <button class="numbers buttons" onclick="insertElement(1)">1</button>
+          <button class="numbers buttons" onclick="insertElement(2)">2</button>
+          <button class="numbers buttons" onclick="insertElement(3)">3</button>
+          <button id="plus" class="buttons" onclick="insertElement('+')">
+            +
+          </button>
+        </div>
+        <div>
+          <button id="zero" class="numbers buttons" onclick="insertElement(0)">
+            0
+          </button>
+          <button id="dot" class="buttons" onclick="insertElement('.')">
+            .
+          </button>
+          <button id="equal" class="buttons " onclick="equal()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" async></script>
+  </body>
+</html>
